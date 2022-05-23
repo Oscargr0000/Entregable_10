@@ -14,8 +14,18 @@ public class GameMAnager : MonoBehaviour
     public TextMeshProUGUI booltext;
     public TextMeshProUGUI stringtext;
 
+    private void Awake()
+    {
+        if (shareInstance == null)
+        {
+            shareInstance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
-    // Start is called before the first frame update
     void Start()
     {
         ApplyData();

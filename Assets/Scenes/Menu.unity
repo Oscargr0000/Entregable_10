@@ -494,6 +494,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d1f72f95b7dc64c9d339d32f348050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _InputInt: 0
+  _InputFloat: 0
+  _InputBool: 0
+  _InputString: 
 --- !u!4 &62347210
 Transform:
   m_ObjectHideFlags: 0
@@ -891,6 +895,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187295392}
   m_CullTransparentMesh: 1
+--- !u!1 &200528439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200528441}
+  - component: {fileID: 200528440}
+  m_Layer: 0
+  m_Name: DataPersistance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &200528440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200528439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8af0faa34c80f44a1428f3f449bd05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputInt: 0
+  InputFloat: 0
+  InputBool: 0
+  InputString: 
+--- !u!4 &200528441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200528439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 949.30945, y: 584.9282, z: -7.9260254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239554485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2187,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1965436939}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Data
+        m_MethodName: MenuManager
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
