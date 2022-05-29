@@ -494,10 +494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d1f72f95b7dc64c9d339d32f348050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InputInt: 0
-  _InputFloat: 0
-  _InputBool: 0
-  _InputString: 
+  _InputInt: {fileID: 40486005}
+  _InputFloat: {fileID: 2071706561}
+  _InputBool: {fileID: 1256566332}
+  _InputString: {fileID: 2130475954}
+  ResultInt: 0
+  ResultFloat: 0
 --- !u!4 &62347210
 Transform:
   m_ObjectHideFlags: 0
