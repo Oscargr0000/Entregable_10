@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class DataPersistance : MonoBehaviour
 {
+    public static DataPersistance shareInstance;
 
-    public static DataPersistance sharedInstance;
+    //Esto es la nube
 
+    //Datos guardados en esta
+    public string FloatData;
+    public string IntData;
+    public bool BoolDatal;
+    public string StringData;
 
-    public int InputInt;
-    public float InputFloat;
-    public bool InputBool;
-    public string InputString;
-
+    //Si existe otro script de DataPersistance sin datos lo borra y aplica los datos guardados
     private void Awake()
     {
-        if(sharedInstance = null)
+        if (shareInstance == null)
         {
-            sharedInstance = this;
-
-            DontDestroyOnLoad(sharedInstance);
+            shareInstance = this;
+            DontDestroyOnLoad(this);
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
